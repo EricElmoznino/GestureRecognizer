@@ -7,11 +7,14 @@ import os
 
 
 class Configuration:
-    def __init__(self, train_log_path = './train', epochs=200, batch_size=100, max_memory=100):
+    def __init__(self, train_log_path = './train', epochs=200, batch_size=100, max_memory=100, state_size=100):
         self.train_log_path = train_log_path
         self.epochs = epochs
         self.batch_size = batch_size
         self.max_memory = max_memory
+        self.state_size = state_size
+
+
 
 
 def log_step(step, total_steps, start_time, error):
